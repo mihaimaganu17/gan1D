@@ -52,8 +52,9 @@ def train_discriminator(model, n_epochs=1000, n_batch=128):
         print(epoch, acc_real, acc_fake)
 
 
-# Define the discriminator model
-model = discriminator_model()
-# fit the model
-train_discriminator(model)
+if __name__ == "__main__":
+    # Define the discriminator model
+    model = discriminator_model()
+    # fit the model
+    train_discriminator(model)
 
